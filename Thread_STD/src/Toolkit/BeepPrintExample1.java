@@ -14,7 +14,7 @@ public class BeepPrintExample1 {
 		
 		for(int i=0; i<5; i++) {
 			System.out.print("¶ò");
-			try { Thread.sleep(500);} catch (Exception e) {}
+			try { Thread.sleep(500);} catch (Exception e) {}//
 		}
 		
 	}
