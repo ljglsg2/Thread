@@ -15,11 +15,11 @@ public class YieldExample {
 		threadA.work = false; //ThreadB만 실행
 		
 		try {Thread.sleep(3000);} catch (InterruptedException e) {}
-		threadA.work = true; //ThreadB만 실행
+		threadA.work = true; //ThreadA ThreadB 실행
 		
 		try {Thread.sleep(3000);} catch (InterruptedException e) {}
-		threadA.stop = true; //ThreadB만 실행
-		threadB.stop = true; //ThreadB만 실행
+		threadA.stop = true; //ThreadA만 종료
+		threadB.stop = true; //ThreadA만 종료
 		
 	}
 
