@@ -9,8 +9,8 @@ public class WaitNotifyExample {
 		ProducerThread producerThread = new ProducerThread(dataBox);
 		ConsumerThread consumerThread = new ConsumerThread(dataBox);
 		
-		producerThread.run();
-		consumerThread.run();
+		producerThread.start();
+		consumerThread.start();
 		
 	}
 

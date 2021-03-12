@@ -6,8 +6,7 @@ public class ConsumerThread extends Thread {
 	
 	public ConsumerThread(DataBox dataBox) {
 		this.dataBox = dataBox;					//공유 객체를 필드에 저장
-	}
-	
+	}	
 	
 	@Override
 	public void run() {
